@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      input = prompt("Input");
+      function vowels(str) {
+        res = " ";
+        for (i = 0; i < str.length; i++) {
+          if (!"aeiouAEIOU".includes(str[i])) {
+            res = res + str[i];
+          }
+        }
+        alert(res);
+      }
+      console.log(vowels(input));
+    </script>
+  </body>
+</html>
